@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejemplo del DOM con JS</title>
-</head>
-<body>
-    <h1>Ejemplo con JavaScript</h1>
-    <h2>Saludos</h2>
+  </head>
+  <body>
+    <!-- <h1 id="cabecera">Título 1 con DOM</h1>
+    <p id="parrafo">Saludos ADSO</p>
     <script>
-        console.log('Saludando por consola')
+      let cabecero = document.getElementById("cabecera");
+      console.log("Valor del Elemento con ID Cabecera :" + cabecero.innerHTML);
+      let parrafo = document.getElementById("parrafo");
+      console.log(`Valor del Párrafo es : ${parrafo.innerHTML}`);
+    </script>  "BYELEMENTID"--> 
+
+    <!-- <h1 id="titulo1">Ejemplo DOS con DOM</h1>
+    <p>Saludos!</p>
+    <p>Segundo Saludo</p>
+    <p>Párrafo</p>
+    <p>Párrafo</p>
+    <script>
+      let parrafos = document.getElementsByTagName("p");
+      console.log(`No. Párrafos: ${parrafos.length}`);
+      for (let i = 0; i < parrafos.length; i++) {
+        console.log(`${i} - ${parrafos[i].innerHTML}`);
+      } "BYTAGNAMEID"-->
     </script>
-</body>
+  </body>
 </html>
