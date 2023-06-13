@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talleres DOM</title>
+  </head>
+  <body>
+    <h1 id="cabecera">Título 1 con DOM</h1>
+    <p id="parrafo">Saludos ADSO</p>
+    <script>
+      let cabecero = document.getElementById("cabecera");
+      console.log("Valor del Elemento con ID Cabecera :" + cabecero.innerHTML);
+      let parrafo = document.getElementById("parrafo");
+      console.log(`Valor del Párrafo es : ${parrafo.innerHTML}`);
+    </script>
+    "BYELEMENTID" -->
+
+    <!-- <h1 id="titulo1">Ejemplo DOS con DOM</h1>
+    <p>Saludos!</p>
+    <p>Segundo Saludo</p>
+    <p>Párrafo</p>
+    <p>Párrafo</p>
+    <script>
+      let parrafos = document.getElementsByTagName("p");
+      console.log(`No. Párrafos: ${parrafos.length}`);
+      for (let i = 0; i < parrafos.length; i++) {
+        console.log(`${i} - ${parrafos[i].innerHTML}`);
+      }
+    </script>
+    "BYTAGNAMEID" -->
+
+    <!-- <h1 class="azul">Ejemplo de Agrupación por Clase</h1>
+    <p class="azul">Saludos1</p>
+    <p class="azul">Saludos2</p>
+    <script>
+      let elementos = document.getElementsByClassName("azul");
+      console.log(`No. Elementos: ${elementos.length}`);
+      // for (let i = 0; i < elementos.length; i++) {
+      //   console.log(`${elementos[i].innerHTML}`);
+      // }
+      for (let elemento of elementos) {
+        console.log(`${elemento.innerHTML}`);
+      }
+    </script>
+  </body>
+</html>
+"BYCLASSNAME" -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talleres DOM</title>
+    <style>
+      .azul {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="azul">Prueba de Títulos con Clase</h1>
+    <p class="azul">Prueba de Párrafo con Clase</p>
+    <p>Párrafo sin Clase</p>
+
+    <script>
+      let elementos = document.querySelectorAll("p.azul");
+      console.log(
+        `No. Elementos que cumplen la condición: ${elementos.length}`
+      );
+      for (let elemento of elementos) {
+        console.log(`${elemento.innerHTML}`);
+      }
+    </script>
+  </body>
+</html> -->
