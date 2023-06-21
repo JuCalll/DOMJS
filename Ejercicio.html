@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas</title>
+    <title>a</title>
+
 </head>
+
 <body>
-    
+    Nombre Completo: <input id="nombre" type="text" name='nombre' value='' />
+    <br>
+    Materia: <input id="materia" type="text" name='' value=''>
+    <br>
+    Nota 1: <input id="n1" type="text" value=''>
+    <br>
+    Nota 2: <input id="n2" type="text" value=''>
+    <br>
+    Nota 3: <input id="n3" type="text" value=''>
+    <br>
+    Nota 4: <input id="n4" type="text" value=''>
+    <br>
+    <button onclick="verResul()">Mostrar</button>
+    <div id="valores"></div>
+    <div id="resultadofinal"></div>
+    <script>
+        function verResul() {
+            let nombre = document.getElementById('nombre').value
+            let materia = document.getElementById('materia').value
+            let n1 = document.getElementById('n1').value
+            let n2 = document.getElementById('n2').value
+            let n3 = document.getElementById('n3').value
+            let n4 = document.getElementById('n4').value
+            let p1 = n1 * 0.15;
+            let p2 = n2 * 0.25;
+            let p3 = n3 * 0.30;
+            let p4 = n4 * 0.30;
+            let promedio = p1 + p2 + p3 + p4;
+            let resultado = document.getElementById('valores');
+            resultado.innerHTML = 'Nombre:' + nombres + '<br>' + 'Nombre de la materia:' + materia
+                + '<br>' + 'Nota final:' + promedio;
+
+            let finalresult, color;
+            if (promedio > 3) {
+                finalresult = "Aprobado";
+                color = "green";
+            } else {
+                finalresult = "Reprobado";
+                color = "red";
+            }
+            let res_f = document.getElementById('resultadofinal');
+            res_f.innerHTML = finalresult
+            res_f.style.color = color;
+        }
+    </script>
 </body>
+
 </html>
